@@ -19,11 +19,17 @@
       <!-- Timer Section -->
       <h2>Timer</h2>
       <div id="timer">
-        <p id="timer_display">00:00</p>
+        <!-- Timer Display -->
+        <p id="timer_display">000:00</p>
+        <!-- User Time Input -->
+        <label for="minutes">Minutes:</label>
+        <input type="number" id="minutes" name="minutes" min="0">
+        <label for="seconds">Seconds:</label>
+        <input type="number" id="seconds" name="seconds" min="0">
+        <!-- Timer Options -->
         <button class="neon-button" onclick="startTimer()">Start</button>
-        <button class="neon-button" onclick="stopTimer()">Stop</button>
         <button class="neon-button" onclick="resetTimer()">Reset</button>
-
+        <button class="neon-button" onclick="stopTimer()">Stop</button>
       </div>
       <!-- Notes/Typos section -->
       <h3>✏️Notes/Typos</h3>
