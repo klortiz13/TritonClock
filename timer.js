@@ -6,7 +6,7 @@ function startTimer() {
     // Get user input
     const min = parseInt(document.getElementById("minutes").value, 10) || 0; 
     const sec = parseInt(document.getElementById("seconds").value, 10) || 0; 
-    let totalSeconds = min * 60 + sec;
+    seconds = min * 60 + sec;
 
     // Initialize "000:00" with the numbers of the user
     let user_display = `${min.toString().padStart(3, '0')}:${sec.toString().padStart(2, '0')}`;
