@@ -5,7 +5,12 @@ let timerInterval;
 function startTimer() {
     // Get user input
     const min = parseInt(document.getElementById("minutes").value, 10) || 0; 
+    document.getElementById("minutes").style.display = "hidden";
+
     const sec = parseInt(document.getElementById("seconds").value, 10) || 0; 
+    document.getElementById("seconds").style.visibility = "hidden";
+
+    // Calculate total time
     seconds = min * 60 + sec;
 
     // Initialize "000:00" with the numbers of the user
@@ -18,6 +23,8 @@ function startTimer() {
 
 function stopTimer() {
     clearInterval(timerInterval);
+    document.getElementById("minutes").style.display = "visible";
+    document.getElementById("seconds").style.visibility = "visible";
 }
 
 function resetTimer() {
