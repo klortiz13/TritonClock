@@ -8,3 +8,16 @@
 #timer {
     font-size: 3em;
 }
+
+.neon-button {
+    border: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 
+          0 0 10px #00f0ff, 
+          0 0 20px #00f0ff, 
+          inset 0 0 10px #00f0ff;  
+  }
+  
