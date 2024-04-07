@@ -42,3 +42,11 @@
 }
 
   
+.ucsd-blue-background {
+    background-color: #00629B; /* Ocean blue color */
+}
+
+.image-background {
+    background-image: url('forest.jpg'); 
+    background-size: cover; /* Make the image cover the whole area */
+}
