@@ -16,9 +16,9 @@
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 
-          0 0 10px #00f0ff, 
-          0 0 20px #00f0ff, 
-          inset 0 0 10px #00f0ff;  
+          0 0 10px #00C6D7, 
+          0 0 20px #00C6D7, 
+          inset 0 0 10px #00C6D7;  
 }
 
 .neon-box {
@@ -28,22 +28,22 @@
     padding: 10px; 
     border-radius: 5px;   /* Slightly rounded corners */
     box-shadow:  
-        0 0 5px #00f0ff,  /* Blue neon glow */
-        0 0 15px #00f0ff, 
-        0 0 30px #00f0ff; 
+        0 0 5px #00C6D7,  /* Blue neon glow */
+        0 0 15px #00C6D7, 
+        0 0 30px #00C6D7; 
 }
 
 /* Add a subtle hover effect */
 .neon-textarea:hover {
    box-shadow: 
-        0 0 8px #00f0ff,   
-        0 0 20px #00f0ff, 
-        0 0 40px #00f0ff; 
+        0 0 8px #00C6D7,   
+        0 0 20px #00C6D7, 
+        0 0 40px #00C6D7; 
 }
 
   
 .ucsd-blue-background {
-    background-color: #00629B; /* Ocean blue color */
+    background-color: #182B49; /* ucsd navy blue color */
 }
 
 .image-background {
