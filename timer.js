@@ -3,23 +3,25 @@ let seconds = 0;
 let timerInterval;
 
 function startTimer() {
-    seconds = 0; 
-    clearInterval(timerInterval); 
-    timerInterval = setInterval(incrementTimer, 1000);
+    timerInterval = setInterval(incrementTimer, 1000); // Update timer every second
 }
 
 function stopTimer() {
     clearInterval(timerInterval);
 }
 
-function incrementTimer() {
-    seconds++;
-    document.getElementById("timer").innerHTML = formatTime(seconds);
+function resetTimer() {
+    seconds = 0;
+    document.getElementById("timer").innerHTML = "00:00";
 }
 
-function formatTime(totalSeconds) {
-    let minutes = Math.floor(totalSeconds / 60);
-    let seconds = totalSeconds % 60;
-    // Add leading zeros if needed
-    return `<span class="math-inline">\{minutes\.toString\(\)\.padStart\(2, '0'\)\}\:</span>{seconds.toString().padStart(2, '0')}`; 
+function incrementTimer() {
+    seconds++;
+    let minutes = Math.floor(seconds / 60);
+    let remainingSeconds = seconds % 60;
+
+    // Format the time display (e.g., "02:15")
+    let display = `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+
+    document.getElementById("timer").innerHTML = display;
 }
