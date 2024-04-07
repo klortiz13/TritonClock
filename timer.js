@@ -28,12 +28,10 @@ function resetTimer() {
 }
 
 function decrementTimer() {
-    seconds--;
-    let minutes = Math.floor(seconds / 60);
-    let remainingSeconds = seconds % 60;
-
+    --seconds;
+    let remainingMinutes = Math.floor(seconds / 60);
+    let remainingSeconds = (seconds % 60);
     // Format the time display (e.g., "02:15")
-    let display = `${minutes.toString().padStart(3, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
-
+    let display = `${remainingMinutes.toString().padStart(3, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
     document.getElementById("timer_display").innerHTML = display;
 }
