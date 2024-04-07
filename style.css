@@ -19,5 +19,26 @@
           0 0 10px #00f0ff, 
           0 0 20px #00f0ff, 
           inset 0 0 10px #00f0ff;  
-  }
+}
+
+.neon-box {
+    background-color: #222; /* Dark background enhances the glow */
+    color: #fff;          /* White text for contrast */
+    border: none;          /* Remove default border */
+    padding: 10px; 
+    border-radius: 5px;   /* Slightly rounded corners */
+    box-shadow:  
+        0 0 5px #00f0ff,  /* Blue neon glow */
+        0 0 15px #00f0ff, 
+        0 0 30px #00f0ff; 
+}
+
+/* Add a subtle hover effect */
+.neon-textarea:hover {
+   box-shadow: 
+        0 0 8px #00f0ff,   
+        0 0 20px #00f0ff, 
+        0 0 40px #00f0ff; 
+}
+
   
